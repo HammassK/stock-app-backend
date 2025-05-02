@@ -11,7 +11,7 @@ export class StocksService {
     private readonly httpService: HttpService,
     private readonly configService: ConfigService,
   ) {
-    this.apiKey = this.configService.get<string>('FINNHUB_API_KEY');
+    this.apiKey = this.configService.get<string>('POLYGON_API_KEY');
   }
 
   async getIndices(): Promise<any> {
